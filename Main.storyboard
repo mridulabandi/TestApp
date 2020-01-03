@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aja-M9-ywg">
+                                <rect key="frame" x="16" y="164" width="382" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cS0-gh-kz4">
+                                <rect key="frame" x="16" y="299" width="382" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pp9-n3-Q0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ht-1D-9LE">
+                                <rect key="frame" x="16" y="379" width="382" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1PZ-WT-kZk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-Ha-uWi">
+                                <rect key="frame" x="16" y="479" width="382" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="U1N-Ng-3ns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zwg-Pl-mrk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credentails are not proper." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZm-eo-zT0">
+                                <rect key="frame" x="16" y="272" width="382" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ht-1D-9LE" secondAttribute="trailing" constant="16" id="2iD-MW-rrQ"/>
+                            <constraint firstItem="2Ht-1D-9LE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CZx-Qf-OZn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ef6-Ha-uWi" secondAttribute="trailing" constant="16" id="EHy-LP-8La"/>
+                            <constraint firstItem="aja-M9-ywg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HFa-jA-893"/>
+                            <constraint firstItem="cS0-gh-kz4" firstAttribute="top" secondItem="WZm-eo-zT0" secondAttribute="bottom" constant="10" id="HuG-uH-c1C"/>
+                            <constraint firstItem="Ef6-Ha-uWi" firstAttribute="top" secondItem="2Ht-1D-9LE" secondAttribute="bottom" constant="40" id="Lo9-Ux-t4N"/>
+                            <constraint firstItem="aja-M9-ywg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="MRP-Wm-wqB"/>
+                            <constraint firstItem="2Ht-1D-9LE" firstAttribute="top" secondItem="cS0-gh-kz4" secondAttribute="bottom" constant="20" id="ZhE-Kl-zG7"/>
+                            <constraint firstItem="cS0-gh-kz4" firstAttribute="top" secondItem="aja-M9-ywg" secondAttribute="bottom" constant="100" id="bit-sH-HhE"/>
+                            <constraint firstItem="Ef6-Ha-uWi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cRh-J1-JFK"/>
+                            <constraint firstItem="cS0-gh-kz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="e6l-bU-4W3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZm-eo-zT0" secondAttribute="trailing" constant="16" id="ig3-gH-y5O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aja-M9-ywg" secondAttribute="trailing" constant="16" id="kaJ-fu-xN0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cS0-gh-kz4" secondAttribute="trailing" constant="16" id="lM7-MX-Ggu"/>
+                            <constraint firstItem="WZm-eo-zT0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z3c-fO-JBM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="IDtextField" destination="cS0-gh-kz4" id="0e5-Zg-Tvb"/>
+                        <outlet property="PasswordTextField" destination="2Ht-1D-9LE" id="liX-oj-7IZ"/>
+                        <outlet property="WarningLabel" destination="WZm-eo-zT0" id="GqT-JP-9iK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="100"/>
+        </scene>
+        <!--Webview View Controller-->
+        <scene sceneID="7wa-2g-7IW">
+            <objects>
+                <viewController storyboardIdentifier="WebviewViewController" id="zPt-76-JLL" customClass="WebviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VK4-pB-ggZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95b-6y-0OJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="832"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sdt-P9-Uc6" firstAttribute="trailing" secondItem="95b-6y-0OJ" secondAttribute="trailing" id="17O-Z0-uqN"/>
+                            <constraint firstItem="95b-6y-0OJ" firstAttribute="leading" secondItem="Sdt-P9-Uc6" secondAttribute="leading" id="cnq-B9-KQb"/>
+                            <constraint firstItem="95b-6y-0OJ" firstAttribute="top" secondItem="Sdt-P9-Uc6" secondAttribute="top" id="uRQ-LI-5Rl"/>
+                            <constraint firstAttribute="bottom" secondItem="95b-6y-0OJ" secondAttribute="bottom" constant="20" symbolic="YES" id="yo2-Dh-1WJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sdt-P9-Uc6"/>
+                    </view>
+                    <connections>
+                        <outlet property="Webview" destination="95b-6y-0OJ" id="wzt-NI-3vD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTO-Wv-9Dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.6231884057972" y="-37.5"/>
+        </scene>
+    </scenes>
+</document>
